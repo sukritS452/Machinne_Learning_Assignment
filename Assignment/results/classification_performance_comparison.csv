@@ -1,0 +1,5 @@
+Model,Accuracy (%),Macro Precision (%),Macro Recall (%),Macro F1-Score (%),Weighted F1 (%),AUC-ROC
+Random Forest,63.63,63.63,63.4,63.49,63.67,0.8168
+Support Vector Machine,53.9,52.32,53.1,45.56,45.96,0.7556
+Decision Tree,61.13,60.5,60.86,60.64,60.88,0.7932
+Logistic Regression,56.67,56.04,56.09,54.3,54.55,0.7288

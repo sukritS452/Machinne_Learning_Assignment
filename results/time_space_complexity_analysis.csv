@@ -1,0 +1,6 @@
+Model,Theoretical Training Time,Theoretical Inference Time,Theoretical Space Complexity,Empirical Training Time (s),Inference Latency (ms/sample),Model Size (KB)
+Random Forest,O(B · M · N log N),O(B · D),O(B · 2^D · M),49.5923,0.3376,5068.09
+Support Vector Machine,O(C_cls · E · N · M),O(C_cls · M),O(C_cls · M),1.5059,0.0003,0.66
+Decision Tree,O(M · N log N),O(D),O(2^D · M),1.4695,0.0046,44.09
+Logistic Regression,O(E · N · M · C_cls),O(M · C_cls),O(M · C_cls),0.2209,0.0004,0.67
+Linear Regression (OLS/Ridge),O(M^2 · N + M^3),O(M),O(M),0.002,0.0,0.4

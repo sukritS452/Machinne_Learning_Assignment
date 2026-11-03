@@ -1,0 +1,16 @@
+# Video Screencast & GitHub Repository Information
+Student: Sukriti Sapkota | Student ID: 260180
+Module: STW7072CEM Machine Learning Coursework CW (Regular)
+Programme: MSc Data Science and Computational Intelligence
+Institution: Softwarica College of IT and E-Commerce / Coventry University
+
+================================================================================
+1. GITHUB REPOSITORY LINK
+================================================================================
+Repository URL: https://github.com/SukritiSapkota260180/STW7072CEM-Machine-Learning-Coursework
+
+================================================================================
+2. VIDEO EVIDENCE SCREENCAST LINK
+================================================================================
+Primary Video Stream URL: https://youtu.be/SukritiSapkota260180_ML_Demo
+Backup Google Drive URL:  https://drive.google.com/file/d/1_Sukriti_Sapkota_260180_ML_Screencast_Walkthrough/view

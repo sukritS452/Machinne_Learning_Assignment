@@ -1,0 +1,134 @@
+# ==============================================================================
+# .gitignore - STW7072CEM Machine Learning Coursework Project
+# Author: Sukriti Sapkota | Student ID: 260180
+# MSc Data Science and Computational Intelligence | Coventry University
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Python & Bytecode Artifacts
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ------------------------------------------------------------------------------
+# Virtual Environments
+# ------------------------------------------------------------------------------
+venv/
+.venv/
+env/
+.env
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# Jupyter Notebook Checkpoints & Cache
+# ------------------------------------------------------------------------------
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+.jupyter/
+
+# ------------------------------------------------------------------------------
+# LaTeX Compilation Intermediate / Auxiliary Files
+# (Preserves source .tex, images, styles, and final .pdf)
+# ------------------------------------------------------------------------------
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc*
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.vrb
+_minted-*
+
+# ------------------------------------------------------------------------------
+# Operating System Artifacts
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+
+# ------------------------------------------------------------------------------
+# IDEs and Code Editors
+# ------------------------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# ------------------------------------------------------------------------------
+# Testing, Profiling & Streamlit Cache
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.streamlit/
+
+# ------------------------------------------------------------------------------
+# Large Binary Media (YouTube/Google Drive links provided in screencast_information.txt)
+# ------------------------------------------------------------------------------
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+!video/screencast_information.txt
+

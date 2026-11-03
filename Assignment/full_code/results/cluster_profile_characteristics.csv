@@ -1,0 +1,4 @@
+Cluster,Sample_Count,Pct_Share,Mean_Temp(C),Mean_Precip(mm),Mean_Humidity(%),Mean_Pressure(kPa),Mean_Yield(kg/ha),Dominant_Crop
+Cluster 0,4776,42.6%,22.46,945.54,50.83,92.93,1669.91,Maize
+Cluster 1,5398,48.2%,13.55,772.31,56.39,78.97,1554.06,Wheat
+Cluster 2,1036,9.2%,1.01,468.25,58.08,61.82,1313.74,Barley
