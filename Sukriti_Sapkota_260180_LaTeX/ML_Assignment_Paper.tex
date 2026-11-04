@@ -77,7 +77,14 @@ To establish a rigorous theoretical and empirical foundation for this study, thr
 \end{enumerate}
 
 \subsection{Research Contributions and Problem Formulation}
-To resolve the critical empirical and methodological limitations identified across the literature \cite{dhakal2023, crane2018, fernandez2021}, this investigation formulated a multi-tiered research framework designed to analyze multi-decadal agro-climatic dynamics without relying on aggregated macro abstractions or data-scarce satellite pipelines. The explicit contributions of this work were structured as follows:
+To resolve the critical empirical and methodological limitations identified across the literature \cite{dhakal2023, crane2018, fernandez2021}, this investigation formulated a multi-tiered research framework designed to analyze multi-decadal agro-climatic dynamics without relying on aggregated macro abstractions or data-scarce satellite pipelines. As conceptualized in Figure~\ref{fig:problem_formulation}, the framework bridges core agronomic vulnerabilities (elevation gradients, non-linear thermal shock, and smallholder exposure) and published research gaps with an end-to-end machine learning analytical methodology yielding actionable food security foresight. The explicit contributions of this work were structured as follows:
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.96\textwidth]{output_image/problem_statement_architecture.jpg}
+\caption{Conceptual Problem Formulation and Solution Architecture: Interconnecting real-world agronomic vulnerabilities (elevation extremes, non-linear thermal stress), foundational research gaps across literature \cite{dhakal2023, crane2018, fernandez2021}, the proposed machine learning analytical pipeline, and actionable operational outcomes for food security planning and resource allocation.}
+\label{fig:problem_formulation}
+\end{figure*}
 
 \begin{itemize}
     \item \textbf{Longitudinal Multi-District Empirical Integration:} We constructed and audited a comprehensive 32-year multi-district dataset (1982--2013) comprising 11,210 verified observations across 75 distinct administrative sub-regions and five major staple crops, eliminating spatial smoothing while capturing multi-decadal climatic fluctuations \cite{dhakal2023, lobell2008}.
@@ -238,7 +245,7 @@ where $\mathbf{I}^*$ was an identity matrix with a zero in the first diagonal en
 \end{figure*}
 
 \subsection{Study Domain and Raw Dataset Characteristics}
-The empirical analysis was conducted using a comprehensive multi-district agro-meteorological archive (\texttt{he.csv}) compiled across 32 continuous agricultural seasons from 1982 to 2013 \cite{dhakal2023}. The study domain encompassed 75 administrative sub-regions representing a complete cross-section of agro-ecological environments, extending from southern sub-tropical floodplains (elevations $< 300$ m) through central temperate mid-hill valleys (elevations $800$--$2,000$ m) to high-altitude alpine mountain zones (elevations $> 2,500$ m) \cite{dhakal2023, fernandez2021}.
+As illustrated in the end-to-end framework architecture (Figure~\ref{fig:arch}), the empirical analysis was conducted using a comprehensive multi-district agro-meteorological archive (\texttt{he.csv}) compiled across 32 continuous agricultural seasons from 1982 to 2013 \cite{dhakal2023}. The study domain encompassed 75 administrative sub-regions representing a complete cross-section of agro-ecological environments, extending from southern sub-tropical floodplains (elevations $< 300$ m) through central temperate mid-hill valleys (elevations $800$--$2,000$ m) to high-altitude alpine mountain zones (elevations $> 2,500$ m) \cite{dhakal2023, fernandez2021}.
 
 The raw dataset comprised 11,625 individual observation vectors structured across 26 environmental, geographic, and agronomic parameters. Table~\ref{tab:dataset_struct} presented the detailed attributes, units of measurement, and statistical summaries of the raw archive.
 
