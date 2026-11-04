@@ -61,7 +61,7 @@ Machine Learning, Agro-Climatic Dynamics, K-Means Clustering, Principal Componen
 \subsection{Context and Research Motivation}
 Global climate instability, characterized by escalating ambient temperature extremes, erratic precipitation distribution, and heightened evapotranspiration stress, exerted profound disruptive pressures on agricultural ecosystems \cite{dhakal2023, crane2018, lobell2008}. In developing agricultural economies characterized by complex topography and heterogeneous microclimates, staple cereal production provided the foundational basis for subsistence livelihoods, rural employment, and domestic caloric supply \cite{dhakal2023, fernandez2021}. Cereal grains, specifically rice paddy, maize, wheat, finger millet, and barley, constituted over 80\% of aggregate agricultural production in topographically diverse sub-Himalayan valleys and lowland plains \cite{dhakal2023}. However, farming systems in these regions remained overwhelmingly rainfed, exposing smallholder farm households to extreme vulnerability from hydro-meteorological shocks, unseasonal monsoon droughts, and post-monsoon deluge events \cite{fernandez2021, lobell2008}.
 
-Historically, agricultural yield assessment relied predominantly on traditional agrarian surveys, manual sampling ledgers, and deterministic crop growth simulation models such as DSSAT and APSIM \cite{crane2018}. While biophysical simulators simulated physiological plant development processes through mechanistic differential equations, their real-world operational utility was severely hindered by intensive parameterization demands, requiring detailed soil chemistry profiles, localized cultivar coefficients, and precise daily irrigation logs that were systematically unavailable across regional developing administrative districts \cite{crane2018, fernandez2021}. Conversely, pure empirical econometric techniques, such as Ordinary Least Squares (OLS) regression, imposed rigid assumptions of linearity, homoscedasticity, and independence among covariates \cite{hastie2009, hoerl1970}. These assumptions failed to capture the complex, non-linear, and threshold-dependent physiological responses of crops to compounded environmental stressors, such as the destructive impacts of heat shock occurring simultaneously with atmospheric vapor pressure deficits \cite{schlenker2009, demartonne1926}.
+Historically, agricultural yield assessment relied predominantly on traditional agrarian surveys, manual sampling ledgers, and deterministic crop growth simulation models such as DSSAT and APSIM \cite{crane2018}. While biophysical simulators simulated physiological plant development processes through mechanistic differential equations, their real-world operational utility was severely hindered by intensive parameterization demands, requiring detailed soil chemistry profiles, localized cultivar coefficients, and precise daily irrigation logs that were systematically unavailable across regional developing administrative districts \cite{crane2018, fernandez2021}. Conversely, pure empirical econometric techniques, such as Ordinary Least Squares (OLS) regression, imposed rigid assumptions of linearity, homoscedasticity, and independence among covariates \cite{hastie2009, hoerl1970}. These assumptions failed to capture the complex, non-linear, and threshold-dependent physiological responses of crops to compounded environmental stressors, such as the destructive impacts of heat shock occurring simultaneously with atmospheric vapor pressure deficits \cite{demartonne1926, schlenker2009}.
 
 Machine learning methodologies emerged as an exceptionally powerful computational paradigm for modeling complex environmental and agronomic interactions \cite{dhakal2023, breiman2001, cortes1995}. By autonomously learning high-dimensional non-linear mappings directly from longitudinal observational data, supervised algorithms (such as Random Forest \cite{breiman2001}, Support Vector Machines \cite{cortes1995}, and Decision Trees \cite{quinlan1986}) and unsupervised algorithms (such as K-Means clustering \cite{macqueen1967} and Principal Component Analysis \cite{hotelling1933}) offered unprecedented diagnostic and analytical capabilities. Nevertheless, the successful operationalization of machine learning within regional agricultural contexts required rigorous attention to data provenance, appropriate handling of topographical heterogeneity, transparent algorithmic benchmarking, and systematic evaluation of computational complexity \cite{hastie2009}.
 
@@ -138,7 +138,7 @@ The collective synthesis of current literature confirmed that while advanced mac
 \section{Theoretical Framework \& Conceptual Model}
 
 \subsection{The ``Why'' Dimension: Real-World Agronomic Problem Resolution}
-The fundamental objective of this investigation was to provide agricultural policymakers, agronomists, and regional planners with an empirically validated computational tool for evaluating crop productivity under changing climatic conditions \cite{dhakal2023, crane2018, lobell2008}. Agricultural food security was governed by complex interactions between solar radiation, thermal accumulation, soil moisture availability, and atmospheric humidity \cite{schlenker2009, demartonne1926}. When ambient temperatures rose without proportional increases in moisture, the vapor pressure deficit spiked, inducing stomatal closure, suppressing photosynthesis, and accelerating crop senescence \cite{schlenker2009}.
+The fundamental objective of this investigation was to provide agricultural policymakers, agronomists, and regional planners with an empirically validated computational tool for evaluating crop productivity under changing climatic conditions \cite{dhakal2023, crane2018, lobell2008}. Agricultural food security was governed by complex interactions between solar radiation, thermal accumulation, soil moisture availability, and atmospheric humidity \cite{demartonne1926, schlenker2009}. When ambient temperatures rose without proportional increases in moisture, the vapor pressure deficit spiked, inducing stomatal closure, suppressing photosynthesis, and accelerating crop senescence \cite{schlenker2009}.
 
 From an operational standpoint, agricultural institutions required answers to three concrete questions:
 \begin{enumerate}
@@ -524,7 +524,6 @@ Despite its empirical contributions, this investigation had limitations that def
 Future work will focus on integrating longitudinal ground meteorological archives with multi-spectral satellite imagery (Sentinel-2 and Landsat-9) and SAR backscatter (Sentinel-1) \cite{fernandez2021}. Furthermore, sequence-to-sequence deep learning architectures, such as Long Short-Term Memory (LSTM) networks and Temporal Fusion Transformers, will be explored to explicitly capture multi-month lagged meteorological dependencies across planting, flowering, and grain maturation stages.
 
 \begin{thebibliography}{15}
-
 \bibitem{dhakal2023}
 S.~Dhakal and A.~Dhungana, ``Forecasting the agriculture yield in developing economies using machine learning techniques,'' \emph{NRB Economic Review}, vol.~35, no.~2, pp. 47--72, 2023. [Online]. Available: \url{https://doi.org/10.3126/nrber.v35i2.59792}
 
@@ -533,6 +532,15 @@ A.~Crane-Droesch, ``Machine learning methods for crop yield prediction and clima
 
 \bibitem{fernandez2021}
 R.~Fernandez-Beltran, T.~Baidar, J.~Kang, and F.~Pla, ``Rice-yield assessment with multi-temporal Sentinel-2 data and 3D CNN: A regional case analysis,'' \emph{Remote Sensing}, vol.~13, no.~7, p. 1391, 2021. [Online]. Available: \url{https://doi.org/10.3390/rs13071391}
+
+\bibitem{demartonne1926}
+C.~A. de~Martonne, ``Une nouvelle fonction climatologique: L'indice d'aridit{\'e},'' \emph{La M{\'e}t{\'e}orologie}, vol.~2, pp. 449--458, 1926. [Online]. Available: \url{https://gallica.bnf.fr/ark:/12148/bpt6k6549216z}
+
+\bibitem{macqueen1967}
+J.~MacQueen, ``Some methods for classification and analysis of multivariate observations,'' in \emph{Proc. 5th Berkeley Symp. Math. Statist. Prob.}, vol.~1, pp. 281--297, 1967. [Online]. Available: \url{https://projecteuclid.org/euclid.bsmsp/1200512992}
+
+\bibitem{hotelling1933}
+H.~Hotelling, ``Analysis of a complex of statistical variables into principal components,'' \emph{Journal of Educational Psychology}, vol.~24, no.~6, pp. 417--441, 1933. [Online]. Available: \url{https://doi.org/10.1037/h0071325}
 
 \bibitem{breiman2001}
 L.~Breiman, ``Random forests,'' \emph{Machine Learning}, vol.~45, no.~1, pp. 5--32, 2001. [Online]. Available: \url{https://doi.org/10.1023/A:1010933404324}
@@ -543,8 +551,11 @@ C.~Cortes and V.~Vapnik, ``Support-vector networks,'' \emph{Machine Learning}, v
 \bibitem{quinlan1986}
 J.~R. Quinlan, ``Induction of decision trees,'' \emph{Machine Learning}, vol.~1, no.~1, pp. 81--106, 1986. [Online]. Available: \url{https://doi.org/10.1007/BF00116251}
 
-\bibitem{macqueen1967}
-J.~MacQueen, ``Some methods for classification and analysis of multivariate observations,'' in \emph{Proc. 5th Berkeley Symp. Math. Statist. Prob.}, vol.~1, pp. 281--297, 1967. [Online]. Available: \url{https://projecteuclid.org/euclid.bsmsp/1200512992}
+\bibitem{hastie2009}
+T.~Hastie, R.~Tibshirani, and J.~Friedman, \emph{The Elements of Statistical Learning: Data Mining, Inference, and Prediction}, 2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax New York: Springer, 2009. [Online]. Available: \url{https://doi.org/10.1007/978-0-387-84858-7}
+
+\bibitem{hoerl1970}
+A.~E. Hoerl and R.~W. Kennard, ``Ridge regression: Biased estimation for nonorthogonal problems,'' \emph{Technometrics}, vol.~12, no.~1, pp. 55--67, 1970. [Online]. Available: \url{https://doi.org/10.1080/00401706.1970.10488634}
 
 \bibitem{rousseeuw1987}
 P.~J. Rousseeuw, ``Silhouettes: A graphical aid to the interpretation and validation of cluster analysis,'' \emph{Journal of Computational and Applied Mathematics}, vol.~20, pp. 53--65, 1987. [Online]. Available: \url{https://doi.org/10.1016/0377-0427(87)90125-7}
@@ -552,23 +563,11 @@ P.~J. Rousseeuw, ``Silhouettes: A graphical aid to the interpretation and valida
 \bibitem{davies1979}
 D.~L. Davies and D.~W. Bouldin, ``A cluster separation measure,'' \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, vol. PAMI-1, no.~2, pp. 224--227, 1979. [Online]. Available: \url{https://doi.org/10.1109/TPAMI.1979.4766909}
 
-\bibitem{hotelling1933}
-H.~Hotelling, ``Analysis of a complex of statistical variables into principal components,'' \emph{Journal of Educational Psychology}, vol.~24, no.~6, pp. 417--441, 1933. [Online]. Available: \url{https://doi.org/10.1037/h0071325}
-
 \bibitem{lobell2008}
 D.~B. Lobell and M.~B. Burke, ``Why are agricultural impacts of climate change so uncertain? The importance of temperature relative to precipitation,'' \emph{Environmental Research Letters}, vol.~3, no.~3, p. 034007, 2008. [Online]. Available: \url{https://doi.org/10.1088/1748-9326/3/3/034007}
 
 \bibitem{schlenker2009}
 M.~J. Schlenker and D.~B. Roberts, ``Nonlinear temperature effects indicate severe damages to U.S. crop yields under climate change,'' \emph{Proceedings of the National Academy of Sciences}, vol. 106, no.~37, pp. 15594--15598, 2009. [Online]. Available: \url{https://doi.org/10.1073/pnas.0906865106}
-
-\bibitem{demartonne1926}
-C.~A. de~Martonne, ``Une nouvelle fonction climatologique: L'indice d'aridit{\'e},'' \emph{La M{\'e}t{\'e}orologie}, vol.~2, pp. 449--458, 1926. [Online]. Available: \url{https://gallica.bnf.fr/ark:/12148/bpt6k6549216z}
-
-\bibitem{hastie2009}
-T.~Hastie, R.~Tibshirani, and J.~Friedman, \emph{The Elements of Statistical Learning: Data Mining, Inference, and Prediction}, 2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax New York: Springer, 2009. [Online]. Available: \url{https://doi.org/10.1007/978-0-387-84858-7}
-
-\bibitem{hoerl1970}
-A.~E. Hoerl and R.~W. Kennard, ``Ridge regression: Biased estimation for nonorthogonal problems,'' \emph{Technometrics}, vol.~12, no.~1, pp. 55--67, 1970. [Online]. Available: \url{https://doi.org/10.1080/00401706.1970.10488634}
 
 \end{thebibliography}
 
